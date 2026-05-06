@@ -3,8 +3,11 @@ layout: default
 title: Home
 ---
 
-# Artikujt
+# Artikujt e fundit
 
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
+<div class="post-card">
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+</div>
 {% endfor %}
