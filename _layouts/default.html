@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
 <header>
-  <a href="/">Home</a>
+  <h1>Urtesi.art</h1>
+  <nav>
+    <a href="/">Home</a>
+  </nav>
 </header>
 
-<hr>
+<div class="container">
+  {{ content }}
+</div>
 
-{{ content }}
+<footer>
+  © 2026 Urtesi.art
+</footer>
 
 </body>
 </html>
