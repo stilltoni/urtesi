@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
-# Mirë se vini në Urtesi.art
+# Artikujt
 
-Këtu do publikohen artikuj.
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
